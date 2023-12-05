@@ -2,7 +2,7 @@
 
 import { Heading } from '@layouts/components/';
 import { Empty } from '@shared/components/Empty';
-import { WeatherHistoryWrapper } from '../_styles/weatherHistoryStyle';
+import { WeatherHistoryWrapper } from '../styles/weatherHistoryStyle';
 
 export const WeatherHistory = () => (
   <WeatherHistoryWrapper>

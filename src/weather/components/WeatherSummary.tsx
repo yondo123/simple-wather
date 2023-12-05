@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { formatTimestampToDate } from '@shared/utils/date';
 import { Heading, Text, Stack } from '@layouts/components';
-import { BannerWrapper } from '../_styles/bannerStyle';
+import { BannerWrapper } from '../styles/summaryStyle';
 
 interface SummaryProps {
   weatherImageUrl: string;

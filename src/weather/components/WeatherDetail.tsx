@@ -1,10 +1,8 @@
 'use client';
 
 import { useGetCurrentWeather } from '@services/hooks/useGetCurrentWeather';
-import { Summary } from './Summary';
-import { Stack, Heading } from '@layouts/components';
-import { DetailPageContainer } from '../_styles/detailPageStyle';
-import { Empty } from '@shared/components/Empty';
+import { Summary } from './WeatherSummary';
+import { DetailPageContainer } from '../styles/weatherDetailPageStyle';
 import { GeoCoding } from '@weather/types';
 import { WeatherCard } from '@weather/components/WeatherCard';
 
