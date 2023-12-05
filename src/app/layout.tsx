@@ -2,6 +2,7 @@
 import { Inter } from 'next/font/google';
 import { GlobalStyle } from '@layouts/components/GlobalStyle';
 import QueryProvider from '@libraries/react-query/Provider';
+import { Container } from '@shared/components/Container';
 import type { Metadata } from 'next';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -15,7 +16,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang="ko">
     <GlobalStyle>
       <QueryProvider>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          <Container>{children}</Container>
+        </body>
       </QueryProvider>
     </GlobalStyle>
   </html>

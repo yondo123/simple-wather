@@ -1,8 +1,9 @@
 import axios from 'axios';
 import { ApplicationError } from '@shared/constants/errorMessage';
+import { LOCALHOST } from '@shared/constants/api';
 
 export const axiosInstance = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_BASE_URL,
+  baseURL: LOCALHOST,
   timeout: 3000
 });
 
