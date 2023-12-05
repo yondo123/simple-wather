@@ -12,10 +12,10 @@ export const inputTextWrapperStyle = css`
     transform: translateY(-50%);
   }
   ${mediaQuery.lg} {
-    width: 100%;
+    max-width: 480px;
   }
   ${mediaQuery.sm} {
-    font-size: 14px;
+    max-width: 320px;
   }
 `;
 
