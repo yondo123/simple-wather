@@ -15,7 +15,6 @@ export const Summary = ({ city, weatherImageUrl, timestamp }: SummaryProps) => {
   return (
     <BannerWrapper>
       <Image
-        priority
         style={{ border: '1px solid #e3e3e3', borderRadius: '50%', backgroundColor: 'white' }}
         alt={`${city} weather`}
         src={`https://openweathermap.org/img/wn/${weatherImageUrl}@4x.png`}
