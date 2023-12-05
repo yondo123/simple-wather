@@ -8,7 +8,7 @@ import {
 } from '../styles/stackStyle';
 import type { FlexToken } from '../types';
 
-interface StackProps {
+interface StackProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   direction?: 'horizontal' | 'vertical';
   spacing?: number | string;
