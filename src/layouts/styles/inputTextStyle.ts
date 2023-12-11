@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import { mediaQuery } from '../responsive';
 
@@ -12,10 +11,10 @@ export const inputTextWrapperStyle = css`
     transform: translateY(-50%);
   }
   ${mediaQuery.lg} {
-    max-width: 480px;
+    width: 100%;
   }
   ${mediaQuery.sm} {
-    max-width: 320px;
+    font-size: 14px;
   }
 `;
 
