@@ -5,7 +5,7 @@ import { CardContainer } from '../styles/weatherCardStyle';
 
 interface WeatherCardProps {
   label: string;
-  value: string;
+  value: string | number;
 }
 
 export const WeatherCard = ({ label, value }: WeatherCardProps) => (

@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { mediaQuery } from '@layouts/responsive';
+
 export const DetailPageContainer = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

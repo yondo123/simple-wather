@@ -18,12 +18,12 @@ export const WeatherDetail = ({ geocoding }: DetailProps) => {
     <>
       <Summary city={geocoding.name} timestamp={dt} weatherImageUrl={weather[0].icon} />
       <DetailPageContainer>
-        <WeatherCard label="풍향" value={wind.deg.toString()} />
+        <WeatherCard label="풍향" value={wind.deg} />
         <WeatherCard label="날씨" value={weather[0].description} />
-        <WeatherCard label="체감 온도" value={main.feels_like.toString()} />
-        <WeatherCard label="최고 기온" value={main.temp_max.toString()} />
-        <WeatherCard label="최저 기온" value={main.temp_min.toString()} />
-        <WeatherCard label="습도" value={main.humidity.toString()} />
+        <WeatherCard label="체감 온도" value={main.feels_like} />
+        <WeatherCard label="최고 기온" value={main.temp_max} />
+        <WeatherCard label="최저 기온" value={main.temp_min} />
+        <WeatherCard label="습도" value={main.humidity} />
       </DetailPageContainer>
     </>
   );
