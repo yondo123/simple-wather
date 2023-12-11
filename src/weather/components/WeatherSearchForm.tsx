@@ -10,12 +10,14 @@ export const WeatherSearchForm = () => {
   const [city, setCity] = useState<string>();
   return (
     <form
+      aria-label="weather-search-form"
       onSubmit={e => {
         e.preventDefault();
         router.push(`/weather/?city=${city}`);
       }}
     >
       <TextInput
+        name="weather"
         submitIcon={<Search />}
         onChange={e => {
           setCity(e.currentTarget.value.toLowerCase());

@@ -9,7 +9,7 @@
     "airbnb-typescript",
     "prettier"
   ],
-  "ignorePatterns": ["next-env.d.ts", "next.config.mjs", "jest.config.ts", "jestSetup.ts", "jestEnv.ts"],
+  "ignorePatterns": ["tests/", "next-env.d.ts", "next.config.mjs", "jest.config.ts", "jestSetup.ts", "jestEnv.ts"],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "import", "react-hooks", "react"],
   "parserOptions": {
