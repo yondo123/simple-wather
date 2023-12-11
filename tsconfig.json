@@ -28,7 +28,8 @@
       "@libraries/*": ["./src/libraries/*"],
       "@shared/*": ["./src/shared/*"],
       "@services/*": ["./src/services/*"],
-      "@weather/*": ["./src/weather/*"]
+      "@weather/*": ["./src/weather/*"],
+      "@tests/*": ["./src/tests/*"]
     }
   },
   "types": ["node", "jest", "@testing-library/jest-dom"],

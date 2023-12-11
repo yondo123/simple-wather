@@ -2,7 +2,7 @@ import { ThemeProvider } from '@emotion/react';
 import theme from '@libraries/emotion/theme';
 import { render, screen } from '@testing-library/react';
 import HomePage from '@app/page';
-import { AppRouterContextProviderMock } from '../mocks/AppRouterProvider';
+import { AppRouterContextProviderMock } from '../mocks/contexts';
 
 const renderHomePage = () =>
   render(
