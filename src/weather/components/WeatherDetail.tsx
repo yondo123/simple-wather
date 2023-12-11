@@ -1,10 +1,10 @@
 'use client';
 
 import { useGetCurrentWeather } from '@services/hooks/useGetCurrentWeather';
-import { Summary } from './WeatherSummary';
-import { DetailPageContainer } from '../styles/weatherDetailPageStyle';
 import { GeoCoding } from '@weather/types';
 import { WeatherCard } from '@weather/components/WeatherCard';
+import { Summary } from './WeatherSummary';
+import { DetailPageContainer } from '../styles/weatherDetailPageStyle';
 
 interface DetailProps {
   geocoding: GeoCoding;
