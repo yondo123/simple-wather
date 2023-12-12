@@ -12,6 +12,9 @@ const config: Config = {
   projects: ['<rootDir>/jest.config.ts'],
   testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
   testEnvironment: 'jest-environment-jsdom',
+  testEnvironmentOptions: {
+    url: 'https://localhost:3000'
+  },
   collectCoverage: true,
   collectCoverageFrom: [
     './src/**/*.{js,jsx,ts,tsx}',
@@ -27,7 +30,8 @@ const config: Config = {
     '^@shared/(.*)$': '<rootDir>/src/shared/$1',
     '^@services/(.*)$': '<rootDir>/src/services/$1',
     '^@weather/(.*)$': '<rootDir>/src/weather/$1'
-  }
+  },
+  transformIgnorePatterns: ['node_modules/(?!axios)/']
 };
 
 export default nextJestConfig(config);
