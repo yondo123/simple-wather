@@ -9,7 +9,7 @@ interface WeatherCardProps {
 }
 
 export const WeatherCard = ({ label, value }: WeatherCardProps) => (
-  <CardContainer>
+  <CardContainer role="listitem">
     <Heading size="xxl">{label}</Heading>
     <Text colorScheme="info" size="xl">
       {value}
