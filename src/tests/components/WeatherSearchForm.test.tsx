@@ -1,7 +1,7 @@
 import Router from 'next/router';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { EmotionThemeProviderMock, AppRouterContextProviderMock } from '../mocks';
+import { EmotionThemeProviderMock, AppRouterContextProviderMock } from '../mocks/contexts';
 import { WeatherSearchForm } from '@weather/components/WeatherSearchForm';
 
 const PLACEHOLDER_TEXT = 'Example seoul, tokyo..';

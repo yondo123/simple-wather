@@ -1,6 +1,5 @@
 'use client';
 
-import { getComponentText } from '@shared/utils/reactUtils';
 import { createBaseFontStyle } from '../styles/fontStyle';
 import { getColorFromToken } from '../utils';
 import type { ColorToken, Size, FontBold, FontAlign, FontDecoration, FontStyle } from '../types';
@@ -27,11 +26,10 @@ export const Text = ({ children, colorScheme = 'font', as = 'p', ...restProps }:
   const Component = as;
   const color = getColorFromToken(colorScheme);
   const baseFontStyle = createBaseFontStyle(size, color, bold, decoration, align, fontStyle);
-  const textContent = getComponentText(children);
 
   return (
     <Component css={baseFontStyle} {...textProps}>
-      {textContent}
+      {children}
     </Component>
   );
 };

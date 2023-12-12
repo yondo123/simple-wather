@@ -12,7 +12,7 @@ interface SummaryProps {
 }
 
 export const Summary = ({ city, weatherImageUrl, timestamp }: SummaryProps) => (
-  <BannerWrapper>
+  <BannerWrapper role="banner">
     <Image
       style={{ border: '1px solid #e3e3e3', borderRadius: '50%', backgroundColor: 'white' }}
       alt={`${city} weather`}

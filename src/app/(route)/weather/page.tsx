@@ -1,6 +1,6 @@
 /* @jsxImportSource react */
 import fetchGeocoding from '@services/fetch/fetchGeocoding';
-import { WeatherDetail } from '@weather/components/WeatherDetail';
+import { Weather } from './_components/Weather';
 
 interface ServerPageProps {
   pageParams: { slug: string[] };
@@ -11,7 +11,7 @@ const page = async ({ searchParams }: ServerPageProps) => {
   const city = searchParams?.city || '';
   const geocoding = await fetchGeocoding(city);
 
-  return <WeatherDetail geocoding={geocoding[0]} />;
+  return <Weather geoCoding={geocoding[0]} />;
 };
 
 export default page;

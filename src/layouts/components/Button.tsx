@@ -4,16 +4,7 @@ import { useTheme } from '@emotion/react';
 import { Text } from './Text';
 import { getColorFromToken, getTokenFromColor, getTextColorBasedOnBrightness } from '../utils';
 import { createBaseStyle, createVariantStyle, createWithIconStyle } from '../styles/buttonStyle';
-import type { ColorToken } from '../types';
-
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
-  variant?: 'solid' | 'ghost';
-  as?: React.ElementType;
-  colorScheme?: ColorToken;
-  rightIcon?: React.ReactNode;
-  icon?: React.ReactNode;
-}
+import type { ButtonProps } from '../types';
 
 export const Button = ({
   children,

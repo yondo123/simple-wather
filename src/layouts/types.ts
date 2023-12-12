@@ -7,6 +7,16 @@ export type Breakpoint = Record<'sm' | 'md' | 'lg', number>;
 export type ColorToken = BaseColors | StatusColors | ContentColors | Colors;
 export type Size = 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
 
+/** Button */
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode;
+  variant?: 'solid' | 'ghost';
+  as?: React.ElementType;
+  colorScheme?: ColorToken;
+  rightIcon?: React.ReactNode;
+  icon?: React.ReactNode;
+}
+
 /** Typography */
 export type FontBold = 'light' | 'medium' | 'semi' | 'extra' | number;
 export type FontAlign = 'start' | 'end' | 'center' | 'justify';
