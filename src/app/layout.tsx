@@ -1,5 +1,6 @@
 /* @jsxImportSource react */
 import { Inter } from 'next/font/google';
+import { MswProvider } from '@libraries/msw/MswProvider';
 import { GlobalStyle } from '@layouts/components/GlobalStyle';
 import QueryProvider from '@libraries/react-query/Provider';
 import { Container } from '@shared/components/Container';
@@ -17,6 +18,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
     <GlobalStyle>
       <QueryProvider>
         <body className={inter.className}>
+          <MswProvider />
           <Container>{children}</Container>
         </body>
       </QueryProvider>
