@@ -17,7 +17,7 @@ interface TextProps extends React.HTMLAttributes<HTMLParagraphElement> {
 export const Text = ({ children, colorScheme = 'font', as = 'p', ...restProps }: TextProps) => {
   const {
     size = 'md',
-    bold = 500,
+    bold = 400,
     align = 'start',
     decoration = 'none',
     fontStyle = 'normal',
@@ -28,7 +28,7 @@ export const Text = ({ children, colorScheme = 'font', as = 'p', ...restProps }:
   const baseFontStyle = createBaseFontStyle(size, color, bold, decoration, align, fontStyle);
 
   return (
-    <Component css={baseFontStyle} {...textProps}>
+    <Component role="paragraph" css={baseFontStyle} {...textProps}>
       {children}
     </Component>
   );
