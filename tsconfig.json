@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -26,46 +22,24 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@app/*": [
-        "./src/app/*"
-      ],
-      "@layouts/*": [
-        "./src/layouts/*"
-      ],
-      "@libraries/*": [
-        "./src/libraries/*"
-      ],
-      "@shared/*": [
-        "./src/shared/*"
-      ],
-      "@services/*": [
-        "./src/services/*"
-      ],
-      "@weather/*": [
-        "./src/weather/*"
-      ],
-      "@tests/*": [
-        "./src/tests/*"
-      ]
+      "@/*": ["./src/*"],
+      "@app/*": ["./src/app/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@libraries/*": ["./src/libraries/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@services/*": ["./src/services/*"],
+      "@weather/*": ["./src/weather/*"],
+      "@tests/*": ["./src/tests/*"]
     }
   },
-  "types": [
-    "node",
-    "jest",
-    "@testing-library/jest-dom"
-  ],
+  "types": ["node", "jest", "@testing-library/jest-dom"],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "src/app/(route)/weather/_components/.next/types/**/*.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "build/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules",
-    "public"
-  ]
+  "exclude": ["node_modules", "public"]
 }
