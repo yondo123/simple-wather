@@ -3,3 +3,5 @@ coverage
 .next
 .vscode
 .env.local
+/public/mockServiceWorker.js
+jest.polyfill.ts
